@@ -60,3 +60,4 @@ RUN chmod -R a+rX /usr/local && \
 EXPOSE 3001
 
 CMD ["sh", "-c", "if [ -d /root/.cache ]; then export XDG_CACHE_HOME=/root/.cache && cp -r /pyls/.cache /root/.cache; fi && python3 pyls_launcher.py"]
+COPY pyproject.toml .
