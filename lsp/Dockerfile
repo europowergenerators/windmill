@@ -46,3 +46,4 @@ EXPOSE 3001
 
 CMD ["python3" ,"pyls_launcher.py"]
 
+COPY pyproject.toml .
